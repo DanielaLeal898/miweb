@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+</head>
+<body style="background-color: rgb(252, 207, 233);">
+    <h1>Registro</h1>
+   <form action="">
+       <fieldset>
+           <legend>Información general</legend>
+           <label for="">Nombre:</label>
+           <input placeholder="Daniela" type="text">
+           <label for="">Apellidos:</label>
+           <input placeholder="Leal" type="text">
+           <label for="">Correo electronico</label>
+           <input placeholder="Danielaleal@gmail.com" type="email">
+           <br><br>
+           <label for="">Fecha de nacimiento</label>
+           <input type="date">
+           <label for="">Edad</label>
+           <input type="Number" name="" id="">
+           <br><br>
+           <label for="">Usuario:</label>
+           <input type="text">
+           <label for="">Contraseña</label>
+           <input type="password" id="password"> 
+           <input type="checkbox" id="show-pass" onchange="Oncheck(this)">
+           <label for="show-pass" id="label-show">Mostrar contraseña</label>
+           <script>
+               function Oncheck(e){
+                   var inputpassword = document.getElementById("password");
+                   var labelshow = document.getElementById("labelshow");
+                   inputpassword.type=e.checked ?"text" : "password";
+                   labelshow.textContent=e.checked ? "Ocultar contraseña" : "Mostrar contraseña"
+               }
+           </script>
+
+       </fieldset>
+      
+   </form>
+   <a href="inicio.html"><button>Regresar</button></a>
+</body>
+</html>

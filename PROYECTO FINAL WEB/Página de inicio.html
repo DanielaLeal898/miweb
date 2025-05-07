@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body style="background-color: rgb(255, 238, 252);">
+<h1 style="text-align: center;  color: rgb(69, 23, 177); font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;">LEAL´S STUDIO FOTOGRAFÍA </h1>
+<center>
+<label for="">Usuario</label>
+<input type="text">
+<br><br>
+<label for="">Contraseña</label>
+<input type="password" id="password">
+<br><br>
+<input type="checkbox" id="show-pass" onchange="oncheck(this)">
+<label for="show-pass" id="label-show">Mostrar Constraseña</label>
+ <script>
+ function oncheck(e){
+var inputpassword = document.getElementById("password");
+var labelshow = document.getElementById("label-show");
+inputpassword.type=e.checked ? "text" : "password" ;
+labelshow.textContent=e.checked ? "Ocultar contraseña" : "Mostrar contraseña" ;
+ }
+</script>
+<br><br>
+ <a href="Recuperacion.html">¿Olvidaste tu contraseña?</a>
+ <br><br>
+ <a href="Principal.html"><button>Inico de sesión </button></a>
+ <a href="Registrate.html"><button>Regístrate</button></a>
+
+</center>  
+</body>
+</html>
